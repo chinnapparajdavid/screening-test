@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: auto;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.discount table,
+.discount th,
+.discount td {
+  border: 1px solid black;
+  margin: 0px 50px;
+  width: 1270px;
+  border-collapse: collapse;
+  text-align: center;
+}
+.discount th {
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+.product table,
+.product th,
+.product td {
+  border: 1px solid black;
+  margin: 0px 50px;
+  width: 1270px;
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.product th {
+  background-color: black;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+.product td:nth-child(6) {
+  background-color: green;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.shopping table,
+.shopping th,
+.shopping td {
+  border: 1px solid black;
+  margin: 0px 50px;
+  width: 1270px;
+  border-collapse: collapse;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.shopping th {
+  background-color: black;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: arial;
+  font-weight: bold;
+}
+.shopping td:nth-child(7) {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+.shopping td:nth-child(7):hover {
+  letter-spacing: 0.4px;
+}
+.shopping td,
+.shopping table {
+  color: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.shopping td:nth-child(7) {
+  border: 2px solid white;
+}

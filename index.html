@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/script.js"></script>
+    <style>
+      .discount td,
+      .discount table {
+        color: black;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product td,
+      .product table:nth-child(6) {
+        color: black;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .product td:nth-child(6):hover {
+        letter-spacing: 0.4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="discount">
+      <h1>discount Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>vendor</th>
+            <th>Trade A</th>
+            <th>Trade B</th>
+            <th>Trade C</th>
+            <th>Trade D</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vendor1</td>
+            <td>12</td>
+            <td>12</td>
+            <td>N/A</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Vendor2</td>
+            <td>10</td>
+            <td>8</td>
+            <td>20</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Vendor3</td>
+            <td>N/A</td>
+            <td>25</td>
+            <td>3</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Vendor4</td>
+            <td>9</td>
+            <td>N/A</td>
+            <td>16</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Vendor5</td>
+            <td>5</td>
+            <td>11</td>
+            <td>N/A</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="product">
+      <h1>Product Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Tags</th>
+            <th>Vendor</th>
+            <th>add to Cart</th>
+          </tr>
+          <tbody id="myTable1" >
+          <tr id="data">
+            <td>1</td>
+            <td>Test Product 1</td>
+            <td>12.5</td>
+            <td>Trade A,ice</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr id="data">
+            <td>2</td>
+            <td>Test Product 2</td>
+            <td>42.5</td>
+            <td>Trade B,ice2</td>
+            <td>Vendor 4</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr id="data">
+            <td>3</td>
+            <td>Test Product 3</td>
+            <td>200</td>
+            <td>Trade c,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr id="data">
+            <td>4</td>
+            <td>Test Product 4</td>
+            <td>52.5</td>
+            <td>Trade c,test</td>
+            <td>Vendor 2</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Test Product 5</td>
+            <td>712.5</td>
+            <td>Trade D,test</td>
+            <td>Vendor 1</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Test Product 6</td>
+            <td>17</td>
+            <td>Trade A,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Test Product 7</td>
+            <td>55</td>
+            <td>Trade A,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Test Product 6</td>
+            <td>17</td>
+            <td>Trade A,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Test Product 6</td>
+            <td>17</td>
+            <td>Trade A,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Test Product 8</td>
+            <td>37</td>
+            <td>Trade D,test</td>
+            <td>Vendor 4</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Test Product 9</td>
+            <td>82</td>
+            <td>Trade c,test</td>
+            <td>Vendor 4</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Test Product 10</td>
+            <td>52</td>
+            <td>Trade B,test</td>
+            <td>Vendor 2</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Test Product 11</td>
+            <td>102</td>
+            <td>Trade B,test</td>
+            <td>Vendor 1</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Test Product 12</td>
+            <td>172.5</td>
+            <td>Trade B,test</td>
+            <td>Vendor 4</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Test Product 13</td>
+            <td>100</td>
+            <td>Trade D,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Test Product 14</td>
+            <td>99.5</td>
+            <td>Trade D,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Test Product 15</td>
+            <td>87.5</td>
+            <td>Trade A,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Test Product 16</td>
+            <td>57</td>
+            <td>Trade A,test</td>
+            <td>Vendor 1</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Test Product 17</td>
+            <td>10</td>
+            <td>Trade C,test</td>
+            <td>Vendor 2</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Test Product 18</td>
+            <td>412.5</td>
+            <td>Trade D,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Test Product 19</td>
+            <td>112.5</td>
+            <td>Trade B,test</td>
+            <td>Vendor 4</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Test Product 20</td>
+            <td>102</td>
+            <td>Trade B,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Test Product 21</td>
+            <td>52</td>
+            <td>Trade A,test</td>
+            <td>Vendor 3</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Test Product 22</td>
+            <td>32</td>
+            <td>Trade C,test</td>
+            <td>Vendor 2</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Test Product 23</td>
+            <td>12</td>
+            <td>Trade D,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Test Product 24</td>
+            <td>584.5</td>
+            <td>Trade D,test</td>
+            <td>Vendor 1</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Test Product 25</td>
+            <td>27</td>
+            <td>Trade D,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Test Product 26</td>
+            <td>132.5</td>
+            <td>Trade A,test</td>
+            <td>Vendor 5</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Test Product 27</td>
+            <td>42.5</td>
+            <td>Trade B,test</td>
+            <td>Vendor 2</td>
+            <td onclick="myChinna()">Add to Cart</td>
+          </tr>
+        </tbody>
+        </thead>
+      </table>
+    </div>
+    <div class="shopping">
+      <h1>shopping Cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Org Price</th>
+            <th>DiscountPercentage</th>
+            <th>DiscountedPrice</th>
+            <th>Vendor</th>
+            <th>Remove Cart</th>
+          </tr>
+        </thead>
+        <tbody id="myTable2">
+          >
+          <tr>
+            <td>1</td>
+            <td>Test Product 1</td>
+            <td>12.5</td>
+            <td>Trade A,ice</td>
+            <td>46.90</td>
+            <td>Vendor 5</td>
+            <td onclick="myDavid()">Remove</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Test Product 2</td>
+            <td>42.5</td>
+            <td>Trade B,ice2</td>
+            <td>549.3</td>
+            <td>Vendor 4</td>
+            <td onclick="myDavid()">Remove</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h1>Total Price:Rs.596.33</h1>
+    <script>
+        function myChinna() {
+        document.getElementById("myTable1");
+        var row = myTable1.deleteRow(-1);
+        
+  
+     
+        
+
+       
+     
+      }
+      
+
+
+
+      function myDavid() {
+        document.getElementById("myTable2").deleteRow(-1);
+      }
+    </script>
+  </body>
+</html>
